@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=Epilogue:wght@500;700&family=Fraunces:wght@700;900&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700;800&family=Karla&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@700&family=Lexend+Deca&family=Manrope:wght@700&family=Markazi+Text:wght@500&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Public+Sans:wght@300;400;700&family=Rubik:wght@400;500&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 909pt;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+header.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+header.container .logo {
+  cursor: pointer;
+}
+header.container nav ul {
+  display: flex;
+  align-items: center;
+}
+header.container nav ul li a {
+  text-align: center;
+  padding: 1rem;
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+}
+header.container nav ul li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+header.container nav ul li:last-child {
+  display: none;
+  cursor: pointer;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: hsl(36, 100%, 99%);
+  width: 66.6666666667%;
+  padding: 1rem;
+  border-left: 1px solid hsl(233, 8%, 79%);
+  display: none;
+}
+aside ul li a {
+  color: hsl(236, 13%, 42%);
+  padding: 1rem;
+}
+aside ul li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+aside ul li:first-child {
+  text-align: right;
+}
+aside ul li:first-child img {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+main.container .grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+main.container .grid .hero .desktop {
+  display: block;
+}
+main.container .grid .hero .mobile {
+  display: none;
+}
+main.container .grid .hero .hero-grid {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+main.container .grid .hero .hero-grid .question h1 {
+  font-size: 3.5rem;
+  color: hsl(240, 100%, 5%);
+}
+main.container .grid .hero .hero-grid .desc p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.5;
+}
+main.container .grid .hero .hero-grid .desc button {
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  border: none;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+main.container .grid .hero .hero-grid .desc button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+main.container .grid .aside {
+  padding: 2rem;
+  background-color: hsl(240, 100%, 5%);
+}
+main.container .grid .aside h1 {
+  color: hsl(35, 77%, 62%);
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+main.container .grid .aside h2 {
+  color: hsl(36, 100%, 99%);
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+main.container .grid .aside h2:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+main.container .grid .aside p {
+  color: hsl(233, 8%, 79%);
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+main.container .grid .aside hr {
+  border: none;
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main.container .footer {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+main.container .footer .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.container .footer .card img {
+  width: 10rem;
+  height: 11rem;
+}
+main.container .footer .card > div {
+  padding-left: 1rem;
+}
+main.container .footer .card > div h1 {
+  color: hsl(233, 8%, 79%);
+  margin: 0.5rem 0;
+}
+main.container .footer .card > div h2 {
+  color: hsl(240, 100%, 5%);
+  margin: 0.4rem 0;
+  font-size: 1.3rem;
+}
+main.container .footer .card > div h2:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+main.container .footer .card > div p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  header.container nav ul li:last-child {
+    display: block;
+  }
+  header.container nav ul li:not(:last-child) {
+    display: none;
+  }
+  main.container .grid .hero .desktop {
+    display: none;
+  }
+  main.container .grid .hero .mobile {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  main.container .grid {
+    grid-template-columns: 1fr;
+  }
+  main.container .grid .hero-grid {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
